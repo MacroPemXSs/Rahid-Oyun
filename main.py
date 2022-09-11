@@ -66,14 +66,14 @@ def button(update, context):
 def command_start(update, context: CallbackContext):
     if update.effective_chat.type == "private":
         
-        addme = InlineKeyboardButton(text="🧚 Qrupa əlavə edin!", url="https://t.me/Rahid_Crocodile_Bot?startgroup=a")
-        sohbet = InlineKeyboardButton(text="💬 Oyun Qrupu", url="https://t.me/Dark_Region")
-        oyun = InlineKeyboardButton(text="🤖 Botlar", url="https://t.me/Rahid_44")
-        admin = InlineKeyboardButton(text="👨🏻‍💻 Sahib", url="https://t.me/Rahid_2003")
+        addme = InlineKeyboardButton(text="🧚 Qrupa əlavə edin!", url="https://t.me/ClorokGameRobot?startgroup=a")
+        sohbet = InlineKeyboardButton(text="💬 Sohbet Grubu ", url="https://t.me/Er404Toplanma")
+        oyun = InlineKeyboardButton(text="🤖 Resmi Kanal", url="https://t.me/AlignakZona")
+        admin = InlineKeyboardButton(text="👨🏻‍💻 Owner", url="https://t.me/TheMacroPem")
 
         keyboard = [[addme],[sohbet],[oyun],[admin]]
         reply_markup = InlineKeyboardMarkup(keyboard)
-        update.message.reply_text('👋 Salam, Mən Crocodile oyunun aparıcısıyam 🤖', reply_to_message_id=True, reply_markup=reply_markup)
+        update.message.reply_text('👋 Salam, Mən Crocodile oyunun aparıcısıyam daha çox melumat üçün /help emrinden istifade edin.✅ 🤖', reply_to_message_id=True, reply_markup=reply_markup)
     else:
         chat_id = update.message.chat.id
         user_id = update.message.from_user.id
